@@ -25,21 +25,21 @@
 
 ### Фронтенд:
 
-> React + Next.js + TypeScript
-> Cтилизация с помощью SCSS modules (темную и светлую тему)
-> Управление состоянием с помощью Redux
-> Взаимодействие с API через GraphQL/Apollo Client
-> Jest и Testing Library для тестирования
-> Storybook для документирования
+* React + Next.js + TypeScript
+* Cтилизация с помощью SCSS modules (темную и светлую тему)
+* Управление состоянием с помощью Redux
+* Взаимодействие с API через GraphQL/Apollo Client
+* Jest и Testing Library для тестирования
+* Storybook для документирования
 
 ### Бэкенд:
 
-> База данных
-> Аутентификация
+* База данных
+* Аутентификация
 
 ### Инфраструктура:
 
-> CI/CD с использованием GitHub Actions
+* CI/CD с использованием GitHub Actions
 
 ## Структура БД
 
