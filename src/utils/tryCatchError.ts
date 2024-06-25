@@ -27,6 +27,6 @@ function toErrorWithMessage(maybeError: unknown): ErrorWithMessage {
  * Return correct try catch error message in any way
  * @param error can be Error, object, string or any possible value
  */
-function tryCatchError(error: unknown) {
+export function tryCatchError(error: unknown) {
   return toErrorWithMessage(error).message;
 }
