@@ -1,5 +1,6 @@
 "use client";
 
+import { tryCatchError } from '@/utils/try-catch-error';
 import React, { useState, FormEvent } from 'react'
 
 export default function AddUserPage() {
@@ -14,8 +15,8 @@ export default function AddUserPage() {
     setSuccess(false);
 
     try {
-      const formData = new FormData(e.target)
-      const response = await fetch(e.target.action, {
+      const formData = new FormData(e.currentTarget)
+      const response = await fetch(e.currentTarget.action, {
         method: 'POST',
         body: formData,
       })
@@ -28,8 +29,7 @@ export default function AddUserPage() {
       console.log(data);
       setSuccess(true);
     } catch (error) {
-      console.error(error);
-      setError(error.message);
+      setError(tryCatchError(error));
     } finally {
       setIsLoading(false);
     }
