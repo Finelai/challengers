@@ -2,7 +2,7 @@
 
 import React, { useState, FormEvent } from 'react';
 
-import { tryCatchError } from '@utils/tryCatchError';
+import tryCatchError from '@utils/tryCatchError';
 
 export default function AddUserPage() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
