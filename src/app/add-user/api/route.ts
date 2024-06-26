@@ -1,8 +1,8 @@
 import { sql } from '@vercel/postgres';
 import { NextResponse } from 'next/server';
 
-export async function POST(request: Request) {
-  const formData = await request.formData()
+export default async function POST(request: Request) {
+  const formData = await request.formData();
   const name = formData.get('name') as string;
   const email = formData.get('email') as string;
   const password = formData.get('password') as string;

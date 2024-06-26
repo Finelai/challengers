@@ -1,12 +1,12 @@
-import Image from "next/image";
-import Link from "next/link";
+import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Header() {
   return (
     <header>
       Header
       <div>
-        Challenges that improve you{" "}
+        Challenges that improve you
         <Image
           src="/challenge-complete.svg"
           alt="Challengers Logo"
@@ -16,8 +16,8 @@ export default function Header() {
         />
       </div>
       <nav>
-        <Link href='/'>Home</Link>
-        <Link href='/add-user'>Sign Up</Link>
+        <Link href="/">Home</Link>
+        <Link href="/add-user">Sign Up</Link>
       </nav>
     </header>
   );
