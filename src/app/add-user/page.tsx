@@ -24,11 +24,9 @@ export default function AddUserPage() {
 
       if (!response.ok) {
         throw new Error('Failed to submit the data. Please try again.');
+      } else {
+        setSuccess(true);
       }
-
-      const data = await response.json();
-      console.log(data);
-      setSuccess(true);
     } catch (error) {
       setErrorMsg(tryCatchError(error));
     } finally {

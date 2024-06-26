@@ -1,5 +1,5 @@
-import { sql } from '@vercel/postgres';
 import { NextResponse } from 'next/server';
+import { sql } from '@vercel/postgres';
 
 export default async function POST(request: Request) {
   const formData = await request.formData();

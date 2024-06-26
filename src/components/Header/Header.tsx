@@ -7,13 +7,7 @@ export default function Header() {
       Header
       <div>
         Challenges that improve you
-        <Image
-          src="/challenge-complete.svg"
-          alt="Challengers Logo"
-          width={24}
-          height={24}
-          priority
-        />
+        <Image src="/challenge-complete.svg" alt="Challengers Logo" width={24} height={24} priority />
       </div>
       <nav>
         <Link href="/">Home</Link>

@@ -2,11 +2,22 @@
   "extends": [
     "next/core-web-vitals",
     "prettier",
-    "airbnb"
+    "airbnb",
+    "plugin:jsx-a11y/recommended",
+    "plugin:prettier/recommended"
   ],
   "rules": {
+    "jsx-a11y/anchor-is-valid": [
+      "error",
+      {
+        "components": ["Link"],
+        "specialLink": ["hrefLeft", "hrefRight"],
+        "aspects": ["invalidHref", "preferButton"]
+      }
+    ],
     "react/jsx-filename-extension": [2, { "extensions": [".js", ".jsx", ".ts", ".tsx"] }],
     "react/jsx-uses-react": "off",
-    "react/react-in-jsx-scope": "off"
+    "react/react-in-jsx-scope": "off",
+    "import/prefer-default-export": "off"
   }
 }
