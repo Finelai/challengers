@@ -1,7 +1,9 @@
 import { NextResponse } from 'next/server';
 import { sql } from '@vercel/postgres';
 
-export default async function POST(request: Request) {
+import tryCatchError from '@utils/tryCatchError';
+
+export async function POST(request: Request) {
   const formData = await request.formData();
   const name = formData.get('name') as string;
   const email = formData.get('email') as string;
@@ -11,7 +13,7 @@ export default async function POST(request: Request) {
     if (!name || !password || !email) throw new Error('provide all data to create new user: name, email, password');
     await sql`INSERT INTO Users (name, password, email) VALUES (${name}, ${password}, ${email});`;
   } catch (error) {
-    return NextResponse.json({ error }, { status: 500 });
+    return NextResponse.json({ error: tryCatchError(error) }, { status: 500 });
   }
 
   const users = await sql`SELECT * FROM Users;`;
