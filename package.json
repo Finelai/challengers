@@ -16,7 +16,7 @@
   "lint-staged": {
     "src/*": [
       "prettier --check --ignore-unknown",
-      "test --bail"
+      "test -- --bail"
     ]
   },
   "dependencies": {
