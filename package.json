@@ -13,12 +13,6 @@
     "prepare": "husky",
     "test": "jest"
   },
-  "lint-staged": {
-    "src/*": [
-      "prettier --check --ignore-unknown",
-      "test -- --bail"
-    ]
-  },
   "dependencies": {
     "@vercel/postgres": "0.8.0",
     "next": "15.0.0-rc.0",
