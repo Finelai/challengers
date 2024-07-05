@@ -29,7 +29,7 @@ describe('function tryCatchError', () => {
     const errorResult = tryCatchError(someErrMessageObj);
     const errorResultType = typeof errorResult;
 
-    expect(errorResultType).toBe('object');
+    expect(errorResultType).toBe('string');
     expect(errorResult).toBe(someErrMessage);
   });
 });
