@@ -10,10 +10,14 @@
     "start": "next start",
     "lint": "next lint",
     "format": "prettier --write \"**/*.{ts,tsx,js,jsx}\"",
-    "prepare": "husky"
+    "prepare": "husky",
+    "test": "jest"
   },
   "lint-staged": {
-    "**/*": "prettier --check --ignore-unknown"
+    "src/*": [
+      "prettier --check --ignore-unknown",
+      "test --findRelatedTests --bail"
+    ]
   },
   "dependencies": {
     "@vercel/postgres": "0.8.0",
@@ -22,17 +26,27 @@
     "react-dom": "19.0.0-rc-f994737d14-20240522"
   },
   "devDependencies": {
+    "@testing-library/jest-dom": "6.4.6",
+    "@testing-library/react": "16.0.0",
+    "@types/jest": "29.5.12",
     "@types/node": "20",
     "@types/react": "18",
     "@types/react-dom": "18",
     "eslint": "8",
     "eslint-config-airbnb": "19.0.4",
+    "eslint-config-airbnb-typescript": "18.0.0",
     "eslint-config-next": "15.0.0-rc.0",
     "eslint-config-prettier": "9.1.0",
+    "eslint-plugin-jest": "28.6.0",
+    "eslint-plugin-jest-dom": "5.4.0",
     "eslint-plugin-prettier": "5.1.3",
+    "eslint-plugin-testing-library": "6.2.2",
     "husky": "9.0.11",
+    "jest": "29.7.0",
+    "jest-environment-jsdom": "29.7.0",
     "prettier": "3.3.2",
     "prettier-plugin-sort-imports": "1.8.5",
+    "ts-node": "10.9.2",
     "typescript": "5"
   },
   "packageManager": "pnpm@9.4.0+sha512.f549b8a52c9d2b8536762f99c0722205efc5af913e77835dbccc3b0b0b2ca9e7dc8022b78062c17291c48e88749c70ce88eb5a74f1fa8c4bf5e18bb46c8bd83a"
