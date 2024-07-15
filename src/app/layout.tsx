@@ -8,10 +8,6 @@ import Footer from '@components/Footer/Footer';
 import { Inter } from 'next/font/google';
 import '../styles/globals.css';
 
-/* enable https://nextjs.org/learn/dashboard-app/partial-prerendering */
-// eslint-disable-next-line camelcase
-export const experimental_ppr = true;
-
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
