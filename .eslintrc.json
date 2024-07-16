@@ -1,7 +1,8 @@
 {
   "root": true,
   "parserOptions": {
-    "project": ["./tsconfig.json"]
+    "project": ["./tsconfig.json"],
+    "tsconfigRootDir": "./"
   },
   "extends": [
     "next/core-web-vitals",
@@ -39,5 +40,6 @@
         "no-unused-expressions": "off"
       }
     }
-  ]
+  ],
+  "ignorePatterns": ["**/*.js"]
 }
