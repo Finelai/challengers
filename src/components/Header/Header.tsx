@@ -1,7 +1,7 @@
 import Image from 'next/image';
 import Link from 'next/link';
 
-export default function Header() {
+function Header() {
   return (
     <header>
       Header
@@ -16,3 +16,5 @@ export default function Header() {
     </header>
   );
 }
+
+export { Header };
