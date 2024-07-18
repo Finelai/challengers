@@ -2,8 +2,8 @@ import React from 'react';
 
 import type { Metadata } from 'next';
 
-import Header from '@components/Header/Header';
-import Footer from '@components/Footer/Footer';
+import { Header } from '@components/Header/Header';
+import { Footer } from '@components/Footer/Footer';
 
 import { Inter } from 'next/font/google';
 import '../styles/globals.css';
