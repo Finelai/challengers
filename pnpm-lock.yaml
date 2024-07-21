@@ -30,6 +30,9 @@ importers:
       '@storybook/addon-links':
         specifier: 8.2.4
         version: 8.2.4(react@19.0.0-rc-f994737d14-20240522)(storybook@8.2.4(@babel/preset-env@7.24.8(@babel/core@7.24.7))(bufferutil@4.0.8)(utf-8-validate@6.0.3))
+      '@storybook/addon-viewport':
+        specifier: ^8.2.5
+        version: 8.2.5(storybook@8.2.4(@babel/preset-env@7.24.8(@babel/core@7.24.7))(bufferutil@4.0.8)(utf-8-validate@6.0.3))
       '@storybook/blocks':
         specifier: 8.2.4
         version: 8.2.4(react-dom@19.0.0-rc-f994737d14-20240522(react@19.0.0-rc-f994737d14-20240522))(react@19.0.0-rc-f994737d14-20240522)(storybook@8.2.4(@babel/preset-env@7.24.8(@babel/core@7.24.7))(bufferutil@4.0.8)(utf-8-validate@6.0.3))
@@ -61,7 +64,7 @@ importers:
         specifier: '18'
         version: 18.3.0
       '@whitespace/storybook-addon-html':
-        specifier: ^6.1.1
+        specifier: 6.1.1
         version: 6.1.1(prettier@3.3.2)(react-syntax-highlighter@15.5.0(react@19.0.0-rc-f994737d14-20240522))
       eslint:
         specifier: '8'
@@ -109,7 +112,7 @@ importers:
         specifier: 1.8.5
         version: 1.8.5(typescript@5.5.2)
       react-syntax-highlighter:
-        specifier: ^15.5.0
+        specifier: 15.5.0
         version: 15.5.0(react@19.0.0-rc-f994737d14-20240522)
       storybook:
         specifier: 8.2.4
@@ -1410,6 +1413,11 @@ packages:
     resolution: {integrity: sha512-58DcoX0xGpWlJfc0iLDjggkVPYzT4JdCZA2ioK9SQXQMsUzGFwR5PAAJv1tivYp7467tNkXvcM3QTb3Q3g8p4g==}
     peerDependencies:
       storybook: ^8.2.4
+
+  '@storybook/addon-viewport@8.2.5':
+    resolution: {integrity: sha512-QH2A+rzoMf8dcREOUpAsx1vvP7w3MQ8HbZCawk7KdkW/KS0L8zhkHfsNL9cfLcgCJA0wtOmRPD25ZVGoxUAHSA==}
+    peerDependencies:
+      storybook: ^8.2.5
 
   '@storybook/blocks@8.2.4':
     resolution: {integrity: sha512-Hl2Dpg41YiJLSVXxjEJPjgPShrDJM3RY6HEEOjqTcAADsheX1IHAWXMJSJGMmne3Sew6VdJXPuHBIOFV4suZxg==}
@@ -7276,6 +7284,11 @@ snapshots:
       storybook: 8.2.4(@babel/preset-env@7.24.8(@babel/core@7.24.7))(bufferutil@4.0.8)(utf-8-validate@6.0.3)
 
   '@storybook/addon-viewport@8.2.4(storybook@8.2.4(@babel/preset-env@7.24.8(@babel/core@7.24.7))(bufferutil@4.0.8)(utf-8-validate@6.0.3))':
+    dependencies:
+      memoizerific: 1.11.3
+      storybook: 8.2.4(@babel/preset-env@7.24.8(@babel/core@7.24.7))(bufferutil@4.0.8)(utf-8-validate@6.0.3)
+
+  '@storybook/addon-viewport@8.2.5(storybook@8.2.4(@babel/preset-env@7.24.8(@babel/core@7.24.7))(bufferutil@4.0.8)(utf-8-validate@6.0.3))':
     dependencies:
       memoizerific: 1.11.3
       storybook: 8.2.4(@babel/preset-env@7.24.8(@babel/core@7.24.7))(bufferutil@4.0.8)(utf-8-validate@6.0.3)
