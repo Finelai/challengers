@@ -13,6 +13,9 @@ const inter = Inter({ subsets: ['latin'] });
 export const metadata: Metadata = {
   title: 'Challengers',
   description: 'Challenges that improve you',
+  icons: {
+    icon: '/challenge-complete.svg',
+  },
 };
 
 export default function RootLayout({
