@@ -7,6 +7,9 @@ import AddUserPage from './page';
 const meta = {
   title: 'pages/AddUser',
   component: AddUserPage,
+  parameters: {
+    layout: 'centered',
+  },
 } satisfies Meta<typeof AddUserPage>;
 
 export default meta;
@@ -14,7 +17,6 @@ type Story = StoryObj<typeof meta>;
 
 export const AddUserSuccess = {
   parameters: {
-    layout: 'centered',
     msw: {
       handlers: [
         http.post('http://localhost:6006/add-user/api', async () => {
@@ -28,7 +30,6 @@ export const AddUserSuccess = {
 
 export const AddUserFail = {
   parameters: {
-    layout: 'centered',
     msw: {
       handlers: [
         http.post('http://localhost:6006/add-user/api', async () => {
