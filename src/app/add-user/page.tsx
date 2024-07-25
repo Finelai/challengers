@@ -4,6 +4,9 @@ import React, { useState, FormEvent } from 'react';
 
 import tryCatchError from '@utils/tryCatchError';
 
+/**
+ * Page for user registration
+ */
 export default function AddUserPage() {
   const [isLoading, setIsLoading] = useState<boolean>(false);
   const [success, setSuccess] = useState<boolean>(false);
