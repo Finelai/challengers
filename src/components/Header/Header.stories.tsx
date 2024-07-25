@@ -14,7 +14,7 @@ const meta = {
 export default meta;
 type Story = StoryObj<typeof meta>;
 
-export const HeaderStory: Story = {
+export const HeaderStory = {
   play: async ({ canvasElement, step }) => {
     const canvas = within(canvasElement);
 
@@ -30,4 +30,4 @@ export const HeaderStory: Story = {
       await expect(logo).toBeVisible();
     });
   },
-};
+} satisfies Story;

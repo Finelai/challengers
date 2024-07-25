@@ -1,4 +1,11 @@
 import type { Preview } from '@storybook/react';
+import { initialize, mswLoader } from 'msw-storybook-addon';
+
+initialize({
+  onUnhandledRequest: ({ url, method }) => {
+    console.error(`Unhandled ${method} request to ${url}`);
+  },
+});
 
 const preview: Preview = {
   parameters: {
@@ -17,6 +24,7 @@ const preview: Preview = {
     },
   },
   tags: ['autodocs'],
+  loaders: [mswLoader],
 };
 
 export default preview;

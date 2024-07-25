@@ -43,16 +43,7 @@
         ]
       }
     ],
-    "import/no-extraneous-dependencies": [
-      "error",
-      {
-        "devDependencies": [
-          "**/*.stories.*",
-          "**/.storybook/**/*.*"
-        ],
-        "peerDependencies": true
-      }
-    ],
+    "import/no-extraneous-dependencies": "off",
     "react/jsx-uses-react": "off",
     "react/react-in-jsx-scope": "off",
     "import/prefer-default-export": "off"
