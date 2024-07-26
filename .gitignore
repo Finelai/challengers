@@ -21,6 +21,7 @@
 *.pem
 .husky
 *storybook.log
+/storybook-static
 
 # debug
 npm-debug.log*
