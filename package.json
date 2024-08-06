@@ -15,7 +15,7 @@
     "storybook": "storybook dev -p 6006",
     "build-storybook": "storybook build",
     "test-storybook": "test-storybook",
-    "test-storybook:ci": "conc -s first -k \"pnpm build-storybook && pnpx serve -l 6006 -L storybook-static\" \"wait-on tcp:6006 && pnpm test-storybook\""
+    "storybook-visual-test": "conc \"pnpm build-storybook && loki --requireReference --reactUri file:./storybook-static\""
   },
   "dependencies": {
     "@vercel/postgres": "0.8.0",
